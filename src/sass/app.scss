@@ -1,0 +1,34 @@
+@charset 'utf-8';
+
+// minireset is needed because the bulma styles are moved into the html tag
+@import '~bulma/sass/base/minireset.sass';
+
+html.light-theme {
+  // import bulma dependencies
+  @import "~bulma/sass/utilities/initial-variables";
+  @import "~bulma/sass/utilities/functions";
+
+  // import custom theme variables
+  @import "./light/variables";
+
+  // apply variables to the stylesheet
+  @import "~bulma";
+
+  // override the bulma stylesheet
+  @import "./light/overrides";
+}
+
+html.dark-theme {
+  // import bulma dependencies
+  @import "~bulma/sass/utilities/initial-variables";
+  @import "~bulma/sass/utilities/functions";
+
+  // import custom theme variables
+  @import "./dark/variables";
+
+  // apply variables to the stylesheet
+  @import "~bulma";
+
+  // override the bulma stylesheet
+  @import "./dark/overrides";
+}
