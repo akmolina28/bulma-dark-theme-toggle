@@ -53,7 +53,7 @@ html.dark-theme .button.is-primary {
     color: #fff;
 }
 ```
-Now javascript can be used to toggle the class name on the html tag and the different styles will render instantly!
+Finally, javascript can be used to toggle the class name on the html tag and the different styles will render instantly!
 
 <br>
 
