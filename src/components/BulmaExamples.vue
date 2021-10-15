@@ -1314,7 +1314,7 @@
       <progress class="progress is-medium is-dark" max="100">45%</progress>
       <progress class="progress is-large is-info" max="100">60%</progress>
     </section>
-    <section class="section" id="table">
+    <section class="section is-hidden-mobile" id="table">
       <h1 class="title">Table</h1>
       <hr />
       <table class="table">

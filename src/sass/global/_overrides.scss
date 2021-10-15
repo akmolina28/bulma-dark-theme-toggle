@@ -1,0 +1,15 @@
+@import "~bulma/sass/utilities/mixins";
+
+@media screen and (min-width: $desktop) {
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    body.has-navbar-fixed-top {
+        padding-top: 5.25rem;
+    }
+}
+
+.navbar {
+    z-index: auto;
+}

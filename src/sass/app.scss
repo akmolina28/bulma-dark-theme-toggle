@@ -15,6 +15,7 @@ html.light-theme {
   @import "~bulma";
 
   // override the bulma stylesheet
+  @import "./global/overrides";
   @import "./light/overrides";
 }
 
@@ -30,5 +31,6 @@ html.dark-theme {
   @import "~bulma";
 
   // override the bulma stylesheet
+  @import "./global/overrides";
   @import "./dark/overrides";
 }

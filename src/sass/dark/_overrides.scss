@@ -165,8 +165,7 @@ a {
 }
 
 .navbar {
-  border-radius: $radius;
-  z-index: auto;
+  // border-radius: $radius;
 
   &.is-transparent {
     background: none;

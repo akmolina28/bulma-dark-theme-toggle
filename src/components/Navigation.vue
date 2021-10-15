@@ -1,7 +1,6 @@
 <template>
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <section class="container">
-
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
           <img
@@ -13,22 +12,20 @@
 
         <a
           role="button"
-          :class="`navbar-burger ${menuActive ? 'is-active' : ''}`"
+          class="navbar-burger pl-4 pt-3"
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
-          @click="menuActive = !menuActive"
+          @click="toggleDarkMode"
         >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+          <transition name='rotate' mode="out-in">
+            <i v-if="darkMode" :key="1" class="fas fa-moon"></i>
+            <i v-if="!darkMode" :key="0" class="fas fa-sun"></i>
+          </transition>
         </a>
       </div>
 
-      <div
-        id="navbarBasicExample"
-        :class="`navbar-menu ${menuActive ? 'is-active' : ''}`"
-      >
+      <div class="navbar-menu">
         <div class="navbar-start">
           <a class="navbar-item"> Home </a>
 
@@ -46,6 +43,7 @@
             </div>
           </div>
         </div>
+        
         <div class="navbar-end">
           <div class="navbar-item">
             <a @click="toggleDarkMode">
